@@ -1,5 +1,6 @@
 const searchButton = document.querySelector(".search-button");
 const defaultUser = "octocat";
+const inputField = document.querySelector(".search-input");
 
 searchButton.addEventListener("click", () => {
   const searchedUser = document.querySelector(".search-input").value;
@@ -7,6 +8,13 @@ searchButton.addEventListener("click", () => {
     return;
   }
   callApi(searchedUser);
+});
+
+inputField.addEventListener("keyup", function (event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    searchButton.click();
+  }
 });
 
 function callApi(userParam) {
