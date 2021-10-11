@@ -272,6 +272,7 @@ body {
   font-family: SpaceMono-regular;
   color: var(--small-text-white);
   text-decoration: none;
+  line-break: anywhere;
 }
 .company-text:hover {
   text-decoration: underline;
