@@ -38,9 +38,20 @@ body {
   --light-purple: #222731;
   --small-text-white: #4b6a9b;
 }
-.shadow {
+/* .shadow {
+  box-shadow: 0px 16px 30px -10px rgb(70 96 187 / 20%);
+} */
+
+.light .search-bar,
+.light .main-content-wrapper {
   box-shadow: 0px 16px 30px -10px rgb(70 96 187 / 20%);
 }
+
+/* .search-bar {}
+.light .search-bar {}
+
+.light .iconica {bback-image: 1}
+.icon {bi: 2} */
 .content-wrapper {
   height: 100%;
   display: flex;

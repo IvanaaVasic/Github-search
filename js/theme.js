@@ -15,14 +15,10 @@ function initTheme() {
     themeName.innerHTML = THEME.DARK;
     themeIcon.classList.remove("theme-icon-dark");
     themeIcon.classList.add("theme-icon-light");
-    searchContainer.classList.add("shadow");
-    mainContainer.classList.add("shadow");
   } else {
     themeName.innerHTML = THEME.LIGHT;
     themeIcon.classList.remove("theme-icon-light");
     themeIcon.classList.add("theme-icon-dark");
-    searchContainer.classList.remove("shadow");
-    mainContainer.classList.remove("shadow");
   }
   console.log(savedTheme);
 }
@@ -41,15 +37,11 @@ toggle.addEventListener("click", () => {
     themeName.innerHTML = THEME.LIGHT;
     themeIcon.classList.remove("theme-icon-light");
     themeIcon.classList.add("theme-icon-dark");
-    searchContainer.classList.remove("shadow");
-    mainContainer.classList.remove("shadow");
   } else {
     window.localStorage.setItem("theme", THEME.LIGHT);
     themeName.innerHTML = THEME.DARK;
     themeIcon.classList.remove("theme-icon-dark");
     themeIcon.classList.add("theme-icon-light");
-    searchContainer.classList.add("shadow");
-    mainContainer.classList.add("shadow");
   }
   document.body.classList.toggle("light");
 });
